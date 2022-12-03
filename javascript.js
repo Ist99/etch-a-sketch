@@ -43,22 +43,20 @@ function randomRGBNumbers() {
 }    
 
 function addOpacity(zs) {
-    console.log(zs);
     if (zs < 0.95) {
         return zs+0.1;
     }
     return zs;
 }
 
-let n = 16;
-
 const sel = document.getElementsByTagName("select");
 let x = sel[0].value;
 sel[0].addEventListener('change', () => {
     x = sel[0].value;
-    buildTheBoard(n,x);
+    colorListener(x);
 })
 
+let n = 16;
 buildTheBoard(n,x);
 
 let btn = document.getElementsByTagName("button");
