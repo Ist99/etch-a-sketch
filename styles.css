@@ -1,9 +1,6 @@
 :root {
     --rowNum: 16;
     --colNum: 16;
-    --a: 0;
-    --b: 0;
-    --c: 0;
 }    
 
 body {
@@ -29,19 +26,6 @@ body {
     border: 1px solid ghostwhite;
 } 
 
-.coloredBlack {
-    background-color: black;
-    border: black !important; 
-}
-
-.coloredRandom {
-    background-color: rgb(--a,--b,--c);
-    border: rgb(--a,--b,--c);
-}
-
-.coloredSlowBlack {
-    
-}
 
 #container2 {
     display: flex;
