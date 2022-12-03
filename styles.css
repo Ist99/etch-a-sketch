@@ -14,8 +14,9 @@ body {
 #container {
     display: grid;
     background-color: white;
-    height: 720px;
     width: 720px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
     grid-template-columns: repeat(var(--colNum), 1fr);
     grid-template-rows: repeat(var(--rowNum), 1fr); 
     border: 5px solid black;
